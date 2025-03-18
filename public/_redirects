@@ -1,0 +1,6 @@
+# Redirect /blog to /portfolio
+/blog    /portfolio    301
+/blog/*  /portfolio    301
+
+# Handle client-side routing
+/*    /index.html   200

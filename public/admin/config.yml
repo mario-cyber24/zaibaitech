@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Icon", name: "icon", widget: "select", options: ["Shield", "Code", "Lock"] }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - { label: "Feature", name: "feature", widget: "string" }
+      - label: "Benefits"
+        name: "benefits"
+        widget: "list"
+        fields:
+          - { label: "Benefit", name: "benefit", widget: "string" }
+
+  - name: "team"
+    label: "Team Members"
+    folder: "content/team"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Bio", name: "bio", widget: "text" }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    fields:
+      - { label: "Client Name", name: "name", widget: "string" }
+      - { label: "Company", name: "company", widget: "string" }
+      - { label: "Testimonial", name: "testimonial", widget: "text" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }

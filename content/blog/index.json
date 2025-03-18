@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "title": "Zero Trust Architecture: Why Traditional Security Perimeters Are No Longer Enough",
+      "date": "2024-03-15T13:35:00Z",
+      "author": "Security Team",
+      "excerpt": "Explore why modern organizations need to move beyond traditional security perimeters and embrace Zero Trust Architecture for comprehensive protection.",
+      "slug": "zero-trust-architecture-why-traditional-security-perimeters-are-no-longer-enough"
+    }
+  ]
+}
